@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* for navigasjonbar start*/
+.navigasjon-top{  
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+
+  }
+/* for navigasjonbar stopp*/
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px){
+    #Grid{
+    grid-template-areas: "header header header"  "main main main" "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 5fr 0fr;
+
+    }
+    main{
+        grid-column: 1 / span 4;
+    }
+    footer{
+        grid-column: 1 / span 4;
+    }
+}
