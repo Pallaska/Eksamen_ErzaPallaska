@@ -48,14 +48,16 @@ p{
 
 /*grå bilde for header*/
 
-.grey-picture{
+/*.grey-picture{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     height: 300px;
     padding: 10px;
-}
+}*/
+
+
 
 /*for tekst inn i grått bilde start*/
 
@@ -64,6 +66,11 @@ h1{
     font-size:xx-large
 }
 
+.box-header{
+    background-color:rgba(0, 0, 0, 0.333);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+}
 .text-header{
     position: absolute;
     top: 50%;
@@ -140,21 +147,65 @@ h3{
 }
 
 .title{
-   
+    flex: 1;
+    text-align: center;
+    display: inline-block;
 }
 
 .text-to-services{
-    flex: 1;
+    /*flex: 1;
     margin: 5px;
-    text-align: center;
+    text-align: center;*/
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: space-between;*/
+}
+/*Our services slutt*/ 
+
+.text-to-signup{
+    display: grid;
+    align-items: center;
 }
 
+.signup{
+    background-color:rgba(0, 0, 0, 0.333);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+}
 
+.box-for-sign{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: #e6bd43;
+    background-color:#e6bd43;
+    box-shadow: 4px 4px 10px#e6bd43(0, 0, 0, 0.3);
+}
 
+.text-for-footer{
+    text-align: center;
+    display: grid;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border:#252525;
+    background-color:#252525;
+    box-shadow: 4px 4px 10px #252525(0, 0, 0, 0.3);
+}
 
+.footer-logo{
+    display: grid;
+    justify-items: left;
+}
 
-
-
+.sosial{
+    display: grid;
+    justify-items: right;
+}
 
 
 
