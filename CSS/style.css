@@ -22,7 +22,6 @@
     font-weight: bold;
     border: #e6bd43;
     background-color:#e6bd43;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 ul {
@@ -73,8 +72,19 @@ h1{
     align-items: center;
     justify-content: center;
     background-color:rgba(0, 0, 0, 0.333);
-    padding: 80px;
+    padding: 96px;
     position: relative;
+    margin: 3%;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3%;
+    color: black;
+    top: 2%; 
 }
 .text-header{
     position: absolute;
@@ -83,31 +93,23 @@ h1{
     transform: translate(-50%, -50%);
     padding: 3%;
     color: black;
-    z-index: 1;
   }
 
 .link-text{
     position:absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    /*clear: right;*/
-    /*margin: 6%;*/
     color:#000;
     font-weight: bold;
     text-decoration: none;
-    /*height: auto;*/
     padding: 10px;
     background-color:#e6bd43;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    /*justify-content: center;*/
 }
  
 /*for tekst inn i grått bilde slutt*/
 
 /*Borderbox om about our Company start*/
-h2{
+.overtitle{
    padding-top: 2%;
    text-align: center;
 }
@@ -168,6 +170,8 @@ h3{
 }
 /*Our services slutt*/ 
 
+/*sign up del start*/
+
 .text-to-signup{
     display: grid;
     align-items: center;
@@ -175,20 +179,31 @@ h3{
 
 .signup{
     background-color:rgba(0, 0, 0, 0.333);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     padding: 25px;
 }
 
 .box-for-sign{
-    text-align: center;
-    display: inline-block;
+    /*text-align: center;*/
+    /*display: inline-block;*/
     text-decoration: none;
     color: black;
     font-weight: bold;
     border: #e6bd43;
     background-color:#e6bd43;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 20%;
+    height: 100%;
+    display: grid;
+    justify-self:right;
 }
+
+.signhere{
+    width: 20%;
+    height: 200%;
+    display: grid;
+    justify-self: center;
+}
+
+/* sign up del slutt*/
 
 .text-for-footer{
     text-align: center;
@@ -199,7 +214,6 @@ h3{
     font-weight: bold;
     border:#252525;
     background-color:#252525;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .footer-logo{
@@ -213,7 +227,28 @@ h3{
 }
 
 
+/*product side*/
+.office-picture{
+    width: 70%;
+    height: 45vh;
+    display: block;
+    margin-left: 10%;
+    opacity: 0.5;
+}
 
+.port{ /*kode hentet fra W3school:https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center2*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+}
+
+hr{
+    color: #e6bd43;
+    width: 66%;
+    transform: translate(-60%, -60%);
+}
 
 
 
