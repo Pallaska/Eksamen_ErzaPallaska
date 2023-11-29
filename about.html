@@ -16,16 +16,16 @@
                 <li><a href="index.html" class="navigasjon-top">Home</a></li>
                 <li><a href="product.html" class="navigasjon-top">Portfolie</a></li>
                 <li><a href="about.html" class="navigasjon-top">About</a></li>
-                <li><a href="#" class="navigasjon-contact">Contact</a></li>
+                <li><a href="about.html#contact-me" class="navigasjon-contact">Contact</a></li>
             </ul>
         </nav>
             <img src="img/office2.jpg" alt="picture of office" class="office2">
-            <div class="overlay-text"><p class="text-in-shadow">Company name</p> <h3 class="text-in-shadow">About our company</h3> <a href="#" class="link-text-about">Get in touch with us</a>
+            <div class="overlay-text"><p class="text-in-shadow">Company name</p> <h3 class="text-in-shadow">About our company</h3> <a href="about.html#contact-me" class="link-text-about">Get in touch with us</a>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum imperdiet metus at viverra. Nunc viverra laoreet nibh, in tincidunt est dignissim sit amet. Aenean scelerisque lorem velit,
             eu elementum nisl semper et. Quisque convallis arcu blandit mi luctus, et dictum velit eleifend. Fusce mi velit</div>
     </header>
     <main>
-        <h3>Our services</h3>
+        <h2>Our services</h2>
         <section class="services">
             <article>
                 <h4 class="title">Branding</h4>
@@ -51,34 +51,42 @@
             <img src="img/logo3.png" alt="photo of logo 3">
         </section>
     <article class="section-box">
-        <h2>Contact us</h2>
-        <section>
+        <h2 class="contact-us">Contact us</h2>
+        <section id="contact-me">
             <h5>Send us a message</h5>
             <div class="Contact-content section-box" >
                 <form class="contact-form">
-                <input type="text" id="name" name="name" placeholder="Ola Nordmann">
-                <input type="text" id="subject" name="subject" placeholder="subject">
-                <textarea id="message" name="message" placeholder="message"></textarea>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="fname" placeholder="Ola Nordmann">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Branding">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder=""></textarea>
                 <button type="submit">Send message</button>
                 </form>
                 <div class="contact-info">
                     <p><strong>Contact information</strong></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum imperdiet metus at viverra.
+                    <p class="section-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum imperdiet metus at viverra.
                        Nunc viverra laoreet nibh, in tincidunt est dignissim sit amet. Aenean scelerisque lorem velit,
                        eu elementum nisl semper et. Quisque convallis arcu blandit mi luctus, et dictum velit eleifend.</p>
-                    <p><strong>Adress:</Address>B R A veien 4, 1783</strong></p>
-                    <p><strong>Phone:</strong>69 60 80 00</p>
-                    <p><strong>Email:</strong>postmottak@hiof.no</p>
+                    <p><strong>Adress:</strong> B R A veien 4, 1783</p>
+                    <p><strong>Phone:</strong> 69 60 80 00</p>
+                    <p><strong>Email:</strong> postmottak@hiof.no</p>
                 </div>
             </div>
         </section>
     </article>
+    <section>
+        <img src="img/map3.png" alt="picture of map" class="map">
+    </section>
     </main>
     <footer class="text-for-footer">
         <a href="index.html"><img src="img/logo1.png" alt="picture of logo on top of the website." class="footer-logo"></a>
         <div class="footer-text">
-            <h2>Company copyright 2023</h2> 
-            <h2>facebook instagram linkdin</h2>
+            <h2>Company copyright 2023</h2>
+            <a href="https://nb-no.facebook.com/" class="sosial-m"><p>facebook</p></a>
+            <a href="https://www.instagram.com/" class="sosial-m" ><p>instagram</p></a>
+            <a href="https://www.linkedin.com/" class="sosial-m"><p>linkdin</p></a>
         </div>
     </footer>
 </body>

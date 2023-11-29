@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body {
+* {
     max-width: 1600px;
 }
 
@@ -49,20 +49,8 @@ p{
     text-align: center;
 }
 
-/*grå bilde for header*/
 
-/*.grey-picture{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    height: 300px;
-    padding: 10px;
-}*/
-
-
-
-/*for tekst inn i grått bilde start*/
+/*for tekst i box start*/
 
 h1{
     font-weight: bold;
@@ -75,7 +63,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:rgba(0, 0, 0, 0.333);
+    background-color:#e0dcdc;
     padding: 102px;
     position: relative;
     margin: 3%;
@@ -110,7 +98,7 @@ h1{
     background-color:#e6bd43;
 }
  
-/*for tekst inn i grått bilde slutt*/
+/*for tekst i box slutt*/
 
 /*Borderbox om about our Company start*/
 .overtitle{
@@ -152,6 +140,10 @@ h3{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
 .services{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -166,15 +158,11 @@ h3{
 }
 
 .text-to-services{
-    /*flex: 1;
-    margin: 5px;
-    text-align: center;*/
     display: grid;
     flex-direction: row;
     align-items: center;
     padding-left: 50.2px;
     padding-right: 50.2px;
-    /*justify-content: space-between;*/
 }
 /*Our services slutt*/ 
 
@@ -187,7 +175,7 @@ h3{
 }
 
 .signup{
-    background-color:rgba(0, 0, 0, 0.333);
+    background-color:#e0dcdc;
     padding: 25px;
 }
 
@@ -222,7 +210,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 50px 20px;
+    padding: 10px 20px;
 }
 
 
@@ -233,7 +221,6 @@ footer{
 }
 
 .footer-text{
-    /* display: grid; */
     justify-content: space-between;
     min-width: 80vw;
     top: 180.5%;
@@ -247,15 +234,19 @@ footer{
     /* right: 48%; */
 }
 
-/* .company-copy{ */
-/* } */
+.sosial-m{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
 
 
-/*product side*/
+/*product side start*/
 
 main{
     padding: 200px;
     padding-top: 50px;
+    padding-bottom: 3px;
 }
 
 
@@ -267,7 +258,7 @@ main{
     opacity: 0.5;
 }
 
-.port{ /*kode hentet fra W3school:https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center2*/
+.port{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -294,6 +285,7 @@ hr{
 
 .overskrift{
     margin: 30px;
+    text-align: left;
 }
 
 .P-400px{
@@ -312,6 +304,7 @@ hr{
     word-spacing: 5px;
 }
 
+/*product side slutt*/
 
 /*About side start*/
 
@@ -360,7 +353,6 @@ hr{
 }
 
 .logos{
-    min-width: 80vw;
     display: flex;
     justify-content: center;
     padding: 120px;
@@ -375,7 +367,6 @@ hr{
     position: absolute;
     top: 123%;
     left: 40%;
-    /*transform: translate(-50%, -50%);*/
     margin: 0;
     font-size: 45px;
     font-style: bold;
@@ -384,12 +375,12 @@ hr{
 /*For kontakt info start*/
 
 .section-box{
-    background-color: #ccc;
+    background-color: #e0dcdc;
     padding: 50px;
 }
 .contact-section{
     background-color: #fff;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -406,10 +397,10 @@ hr{
     display: grid;
     flex-wrap: wrap;
     position: absolute;
-    top: 200%;
+    top:210%;
     left: 70%;
     transform: translate(-50%, -50%);
-    padding: 4%;
+    padding: 10%;
 }
 
 .contact-form input{
@@ -438,8 +429,18 @@ hr{
     padding: 5px;
 }
 
-/*.our-services-text{
-    /*display: inline-flex;
-    flex-direction: row;
-}*/
+.contact-us{
+    text-align: center;
+    margin-top: 2px;
+}
 
+h5{
+    font-weight: bold;
+    font-size:large;
+}
+/*For kontakt info slutt*/
+
+.map{
+    width: 100%;
+    height: 70%;
+}
