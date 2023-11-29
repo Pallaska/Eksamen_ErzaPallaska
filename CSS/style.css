@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1600px;
+}
+
 /* for navigasjonbar start*/
 .navigasjon-top{ 
     text-align: right;
@@ -72,7 +76,7 @@ h1{
     align-items: center;
     justify-content: center;
     background-color:rgba(0, 0, 0, 0.333);
-    padding: 96px;
+    padding: 102px;
     position: relative;
     margin: 3%;
 }
@@ -98,11 +102,11 @@ h1{
 .link-text{
     position:absolute;
     top: 70%;
-    left: 50%;
+    left: 43%;
     color:#000;
     font-weight: bold;
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
     background-color:#e6bd43;
 }
  
@@ -149,23 +153,27 @@ h3{
 }
 
 .services{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px 20px;
 }
 
 .title{
-    flex: 1;
+    display: grid;
+    align-items: center;
     text-align: center;
-    display: inline-block;
 }
 
 .text-to-services{
     /*flex: 1;
     margin: 5px;
     text-align: center;*/
-    display: inline-flex;
+    display: grid;
     flex-direction: row;
     align-items: center;
+    padding-left: 50.2px;
+    padding-right: 50.2px;
     /*justify-content: space-between;*/
 }
 /*Our services slutt*/ 
@@ -173,7 +181,8 @@ h3{
 /*sign up del start*/
 
 .text-to-signup{
-    display: grid;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -183,51 +192,73 @@ h3{
 }
 
 .box-for-sign{
-    /*text-align: center;*/
-    /*display: inline-block;*/
     text-decoration: none;
     color: black;
     font-weight: bold;
     border: #e6bd43;
     background-color:#e6bd43;
-    width: 20%;
-    height: 100%;
     display: grid;
-    justify-self:right;
+    justify-items: right;
+    padding: 12.5px;
+    height: 50px;
+    width: 100px;
 }
 
 .signhere{
-    width: 20%;
-    height: 200%;
+    width: 200px;
+    height: 50px;
     display: grid;
     justify-self: center;
 }
 
 /* sign up del slutt*/
 
-.text-for-footer{
-    text-align: center;
-    display: grid;
-    display: block;
+footer{
     text-decoration: none;
     color: white;
     font-weight: bold;
     border:#252525;
     background-color:#252525;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px 20px;
 }
+
 
 .footer-logo{
     display: grid;
     justify-items: left;
+    padding: 5px;
 }
 
-.sosial{
-    display: grid;
+.footer-text{
+    /* display: grid; */
+    justify-content: space-between;
+    min-width: 80vw;
+    top: 180.5%;
+    left: 80%;
+    word-spacing: 2px;
     justify-items: right;
+    display: flex;
+    padding:40px ;
+    padding-left: 30vw;
+    padding-right: 1px;
+    /* right: 48%; */
 }
+
+/* .company-copy{ */
+/* } */
 
 
 /*product side*/
+
+main{
+    padding: 200px;
+    padding-top: 50px;
+}
+
+
 .office-picture{
     width: 70%;
     height: 45vh;
@@ -247,23 +278,168 @@ h3{
 hr{
     color: #e6bd43;
     width: 66%;
-    transform: translate(-60%, -60%);
+    transform: translate(-10%, -30%);
+
+}
+
+.filter{
+    display: inline-flex;
+    flex-direction: row;
+    color: #000;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 6px;
+    margin-top: 30px;
+}
+
+.overskrift{
+    margin: 30px;
+}
+
+.P-400px{
+    flex: 33.33%;
+    padding: 5px;
+    max-width: 350px;
+    min-height: 200px;
+}
+
+.branding-picture{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.text-for-img{
+    word-spacing: 5px;
 }
 
 
+/*About side start*/
 
-/*
-@media only screen and (min-width: 600px){
-    #Grid{
-    grid-template-areas: "header header header"  "main main main" "footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0fr 5fr 0fr;
-
-    }
-    main{
-        grid-column: 1 / span 4;
-    }
-    footer{
-        grid-column: 1 / span 4;
-    }
+.office2{
+    width: 70%;
+    height: 45vh;
+    display: block;
+    margin-left: 10%;
 }
+
+.overlay-text{
+    position: absolute;
+    top: 50%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 290px;
+    background: white;
+    opacity: 0.8;
+    padding: 25px;
+}
+
+.text-in-shadow{
+    text-align: left;
+    padding: 2px;
+}
+
+.link-text-about{
+    position:absolute;
+    top: 80%;
+    color:#000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    background-color:#e6bd43;
+}
+
+.our-services{
+    text-align: center;
+}
+
+.our-services-title{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logos{
+    min-width: 80vw;
+    display: flex;
+    justify-content: center;
+    padding: 120px;
+    border: #e6bd43;
+    background-color:#e6bd43;
+}
+
+.logos img{
+    margin: 0 10px;
+}
+.some-of-our-c{
+    position: absolute;
+    top: 123%;
+    left: 40%;
+    /*transform: translate(-50%, -50%);*/
+    margin: 0;
+    font-size: 45px;
+    font-style: bold;
+}
+
+/*For kontakt info start*/
+
+.section-box{
+    background-color: #ccc;
+    padding: 50px;
+}
+.contact-section{
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form{
+    width: 48%;
+}
+.contact-info{
+    width: 48%;
+    display: grid;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 200%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    padding: 4%;
+}
+
+.contact-form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button{
+    background: #e6bd43;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact-info p{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/*.our-services-text{
+    /*display: inline-flex;
+    flex-direction: row;
+}*/
+
